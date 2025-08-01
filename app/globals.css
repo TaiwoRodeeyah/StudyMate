@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 13% 98%;
+    --foreground: 30 10% 9%;
+    --card: 43 13% 98%;
+    --card-foreground: 30 10% 9%;
+    --popover: 43 13% 98%;
+    --popover-foreground: 30 10% 9%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 43 13% 98%;
+    --secondary: 39 11% 93%;
+    --secondary-foreground: 30 10% 9%;
+    --muted: 39 11% 93%;
+    --muted-foreground: 25 5% 45%;
+    --accent: 39 11% 93%;
+    --accent-foreground: 30 10% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 43 13% 98%;
+    --border: 39 11% 89%;
+    --input: 39 11% 89%;
+    --ring: 43 74% 49%;
+    --radius: 0.75rem;
+    --chart-1: 43 74% 49%;
+    --chart-2: 27 87% 67%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 30 10% 9%;
+    --foreground: 43 13% 98%;
+    --card: 30 10% 9%;
+    --card-foreground: 43 13% 98%;
+    --popover: 30 10% 9%;
+    --popover-foreground: 43 13% 98%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 30 10% 9%;
+    --secondary: 25 5% 15%;
+    --secondary-foreground: 43 13% 98%;
+    --muted: 25 5% 15%;
+    --muted-foreground: 25 5% 65%;
+    --accent: 25 5% 15%;
+    --accent-foreground: 43 13% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 43 13% 98%;
+    --border: 25 5% 15%;
+    --input: 25 5% 15%;
+    --ring: 43 74% 49%;
+    --chart-1: 43 74% 49%;
+    --chart-2: 27 87% 67%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
